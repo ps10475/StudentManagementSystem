@@ -1,0 +1,33 @@
+$primary: #416fec;
+$light: white;
+$dark: #1f1f1f;
+
+.Sider{
+   overflow:auto;
+   height: 100vh;
+   text-align: center;
+  & .CollapseBtn{   
+    border: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem; 
+    height: 30px; 
+    background-color: #001529;
+    &:focus{
+      background-color: #001529;
+      outline: none;
+    } 
+  }
+}
+.Header{
+  color: $light !important;
+}
+.Content{
+  color: $dark;
+  height: 50vh;
+  padding: 30px;
+}
+.Footer{
+  color: $light;
+}
