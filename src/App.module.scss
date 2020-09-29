@@ -1,33 +1,78 @@
 $primary: #416fec;
 $light: white;
-$dark: #1f1f1f;
+$dark: #1f1f1f; 
 
 .Sider{
    overflow:auto;
    height: 100vh;
    text-align: center;
-  & .CollapseBtn{   
-    border: none;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    font-size: 1.2rem; 
-    height: 30px; 
-    background-color: #001529;
-    &:focus{
-      background-color: #001529;
-      outline: none;
-    } 
-  }
+   z-index: 20;
 }
 .Header{
   color: $light !important;
+  padding: 0 15px !important;
+  & .CollapseBtn{   
+    border: none;
+    border-radius: 50%;
+    padding: 0 6px;
+    margin: 0;
+    font-size: 1.2rem;  
+    background-color: #001529;
+    color: $light;
+    &:focus, &:active,&:hover{
+      background-color: #001529; 
+      box-shadow: 0; 
+    } 
+  }
 }
 .Content{
   color: $dark;
-  height: 50vh;
-  padding: 30px;
+  height: 85vh !important;
+  padding: 24px;
+  overflow: auto;
 }
 .Footer{
   color: $light;
+  text-align: right;
+  padding: 12px 50px !important;
+}
+
+.Toolbar{
+  padding: 0;
+  text-align: end;
+  & *{
+    margin: 0 5px;
+  }
+}
+.Sign{
+  text-align: end;
+  padding-right: 15px;
+  &>* {
+    margin: 0 10px;
+  }
+  & .AvatarMobile{
+    margin: 4px 0;
+    margin-left: auto;
+    width: 50%;
+    position: relative;
+    & p{
+      background-color: #fff;
+      padding: 12px 10px;
+      text-align: center;
+      width: 200%;
+      border-radius: 50px;
+      position: absolute;
+      right: 0;
+      &:nth-child(1){
+        top: 80px;
+      }
+      &:nth-child(2){
+        top: 140px;
+      }
+      &:hover{
+        color: white;
+        background-color: #001529;
+      }
+    }
+  }
 }

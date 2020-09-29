@@ -4,7 +4,7 @@ import React from 'react';
 const index = () => {
     return (
         <>
-            Home
+            <div style={{height:'200vh'}}>Home</div>
         </>
     );
 }
